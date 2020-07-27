@@ -1,0 +1,165 @@
+:root {
+    --light-blue: #4285F4;
+    --deep-blue: #1A0DAB;
+    --main-background: white;
+    --grey-background: #F2F2F2;
+    --faded-text: #5F5F5F;
+    --results-text: #5D5D5D;
+    --footer-height: 5.5em;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    position: relative;
+    padding-bottom: var(--footer-height);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 8em;
+    box-shadow: 0 0 1px black;
+}
+
+#top-bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 50em;
+    height: 50%;
+    padding-top: 1.5em;
+    padding-bottom: 1em;
+    padding-left: 1.5em;
+}
+
+#top-bar img {
+    height: 2em;
+    width: auto;
+}
+
+#search-bar-group {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+    height: 2.3em;
+    margin-left: 2em;
+    border-radius: 2em;
+    box-shadow: 0px 0px 2px 0px black;
+}
+
+#search-bar-form {
+    margin-left: 1em;
+    width: 100%;
+}
+
+#search-bar-input {
+    font-size: 1em;
+    width: 100%;
+    border: none;
+}
+
+#search-bar-input:focus {
+    outline: none;
+}
+
+#search-bar-group i {
+    font-size: 1.1em;
+    margin: 0 1em;
+    color: var(--light-blue);
+}
+
+#nav-bar {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    margin-left: 9em;
+    height: 50%;
+    color: var(--faded-text);
+}
+
+#nav-links {
+    display: flex;
+}
+
+#nav-tools {
+    display: flex;
+}
+
+.nav-link-group {
+    font-size: 0.8em;
+    padding: 1em;
+    border-bottom: 3px solid var(--main-background);
+}
+
+.nav-link-group.active {
+    color: var(--light-blue);
+    border-bottom: 3px solid var(--light-blue);
+}
+
+#nav-bar i {
+    padding: 0 0.5em;
+}
+
+main {
+    margin-left: 9em;
+}
+
+#search-results-count {
+    font-size: 0.85em;
+    color: var(--faded-text);
+}
+
+#search-results {
+    margin: 2em 0;
+    width: 40em;
+}
+
+.result-group {
+    margin: 2em 0;
+}
+
+.result-group h3 {
+    font-weight: 400;
+    color: var(--deep-blue);
+    margin: 0.5em 0;
+}
+
+.result-group p {
+    font-size: 0.85em;
+    color: var(--results-text);
+    margin: 0;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: var(--footer-height);
+    background-color: var(--grey-background);
+    font-size: 0.85em;
+}
+
+#identifiers, #links {
+    display: flex;
+    align-items: center;
+    margin-left: 9em;
+    color: var(--faded-text);
+}
+
+.identifier, .link {
+    margin: 0.5em 1em;
+}
+
+.identifier strong {
+    color: black;
+}
