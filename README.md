@@ -1,2 +1,3 @@
 # google-search
-Static clone of the Google search results page for The Odin Project.
+[Live page](https://junskih.github.io/google-search/)
+Static clone of the Google search results page.
